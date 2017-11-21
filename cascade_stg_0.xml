@@ -76,10 +76,10 @@
         <config>
             <Storage>
                 <in_commods>
-                    <val>EU</val>
+                    <val>c_enrich_u</val>
                 </in_commods>
                 <out_commods>
-                    <val>EU_str</val>
+                    <val>c_enrich_u_str</val>
                 </out_commods>
                 <residence_time>0</residence_time>
             </Storage>
