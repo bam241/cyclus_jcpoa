@@ -9,78 +9,78 @@
     </control>
 
     <archetypes>
+        <spec> <lib>cycamore</lib> <name>DeployInst</name></spec>
         <spec> <lib>cycamore</lib><name>Source</name> </spec>
         <spec> <lib>cycamore</lib><name>Sink</name> </spec>
         <spec> <lib>cycamore</lib><name>Storage</name> </spec>
         <spec> <lib>mbmore</lib><name>CascadeEnrich</name> </spec>
     </archetypes>
 
-    <facility>
-        <name>mine</name>
+    <prototype>
+        <name>nu_src</name>
         <config>
             <Source>
-                <outcommod>nat_uranium</outcommod>
-                <outrecipe>nat_u_recipe</outrecipe>
+                <outcommod>c_nat_u</outcommod>
+                <outrecipe>r_nat_u</outrecipe>
                 <throughput>1000.0</throughput>
             </Source>
         </config>
-    </facility>
+    </prototype>
 
-    <facility>
-        <name>LEU</name>
+
+    <prototype>
+        <name>waste</name>
         <config>
             <Sink>
                 <in_commods>
-                    <val>enriched</val>
+                    <val>c_depleted_u</val>
                 </in_commods>
-                <recipe_name>leu3_recipe</recipe_name>
             </Sink>
         </config>
-    </facility>
+    </prototype>
 
-    <facility>
-        <name>covert_HEU</name>
-        <config>
-            <Sink>
-                <in_commods>
-                    <val>enriched</val>
-                </in_commods>
-                <recipe_name>heu_recipe</recipe_name>
-            </Sink>
-        </config>
-    </facility>
-
-    <facility>
-        <name>Cascade</name>
+    <prototype>
+        <name>cascade</name>
         <config>
             <CascadeEnrich>
-                <feed_commod>nat_uranium</feed_commod>
-                <product_commod>enriched</product_commod>
-                <tails_commod>tails</tails_commod>
-                <feed_recipe>nat_u_recipe</feed_recipe>
-                <design_feed_flow>739</design_feed_flow>
-                <max_centrifuges>1000</max_centrifuges>
-                <design_feed_assay>0.007</design_feed_assay>
-                <design_product_assay>0.035</design_product_assay>
-                <design_tails_assay>0.002</design_tails_assay>
+                <feed_commod>c_nat_u</feed_commod> 
+                <feed_recipe>r_nat_u</feed_recipe> 
+                <product_commod>c_enrich_u</product_commod> 
+                <tails_commod>c_depleted_u</tails_commod> 
+                <max_feed_inventory>1.0</max_feed_inventory>
+
+                <design_product_assay>0.0367</design_product_assay>
+                <design_tails_assay>0.003</design_tails_assay>
+                
+                <centrifuge_velocity>350</centrifuge_velocity>
+                <height>1.8</height>
+                <diameter>0.105</diameter>
+                <machine_feed>12</machine_feed>
             </CascadeEnrich>
         </config>
-    </facility>
+    </prototype>
 
     <recipe>
-        <name>nat_u_recipe</name>
+        <name>r_nat_u</name>
         <basis>atom</basis>
         <nuclide> <id>922350000</id> <comp>0.0071</comp> </nuclide>
         <nuclide> <id>922380000</id> <comp>0.993</comp> </nuclide>
     </recipe>
 
-    <recipe>
-        <name>leu3_recipe</name>
-        <basis>atom</basis>
-        <nuclide> <id>922350000</id> <comp>0.03</comp> </nuclide>
-        <nuclide> <id>922380000</id> <comp>0.97</comp> </nuclide>
-    </recipe>
-
+    <prototype>
+        <name>storage</name>
+        <config>
+            <Storage>
+                <in_commods>
+                    <val>EU</val>
+                </in_commods>
+                <out_commods>
+                    <val>EU_str</val>
+                </out_commods>
+                <residence_time>0</residence_time>
+            </Storage>
+        </config>
+    </prototype>
 
     <prototype>
         <name>main_deployer</name>
@@ -89,7 +89,7 @@
                 <prototypes>
                     <val>nu_src</val>
                    
-                    <val>Storage_pwr_tru</val>
+                    <val>cascade</val>
                     
                     <val>storage</val>
                     <val>waste</val>
@@ -117,5 +117,5 @@
     </prototype>
 
 
-    <agent> <name>deployer_1</name> <prototype>deployer_main_CHAIN</prototype> </agent>
+    <agent> <name>deployer_1</name> <prototype>main_deployer</prototype> </agent>
 </simulation>
