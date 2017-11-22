@@ -67,8 +67,8 @@
     <recipe>
         <name>r_u</name>
         <basis>atom</basis>
-        <nuclide> <id>922350000</id> <comp>0.53521</comp> </nuclide>
-        <nuclide> <id>922380000</id> <comp>0.46479</comp> </nuclide>
+        <nuclide> <id>922350000</id> <comp>0.53086206967755012</comp> </nuclide>
+        <nuclide> <id>922380000</id> <comp>0.46913793032244988</comp> </nuclide>
     </recipe>
 
     <prototype>
