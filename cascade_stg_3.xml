@@ -2,7 +2,7 @@
 
     <schematype>flat</schematype>
     <control>
-        <duration>120</duration>
+        <duration>12</duration>
         <startmonth>1</startmonth>
         <startyear>2000</startyear>
         <explicit_inventory>true</explicit_inventory>
@@ -20,8 +20,8 @@
         <name>nu_src</name>
         <config>
             <Source>
-                <outcommod>c_u</outcommod>
-                <outrecipe>r_u</outrecipe>
+                <outcommod>c_nat_u</outcommod>
+                <outrecipe>r_nat_u</outrecipe>
                 <throughput>1000.0</throughput>
             </Source>
         </config>
@@ -43,15 +43,15 @@
         <name>cascade</name>
         <config>
             <CascadeEnrich>
-                <feed_commod>c_u</feed_commod>
-                <feed_recipe>r_u</feed_recipe>
+                <feed_commod>c_nat_u</feed_commod>
+                <feed_recipe>r_nat_u</feed_recipe>
                 <product_commod>c_enrich_u</product_commod>
                 <tails_commod>c_depleted_u</tails_commod>
                 <max_feed_inventory>33.7308</max_feed_inventory>
 
-                <design_product_assay>0.03498</design_product_assay>
-                <design_tails_assay>0.003</design_tails_assay>
-                <design_feed_assay>0.0072</design_feed_assay>
+                <design_product_assay>0.56</design_product_assay>
+                <design_tails_assay>0.10</design_tails_assay>
+                <design_feed_assay>0.27416</design_feed_assay>
                 <design_feed_flow>1000</design_feed_flow>
                 <max_centrifuges>164</max_centrifuges>
 
@@ -65,10 +65,10 @@
     </prototype>
 
     <recipe>
-        <name>r_u</name>
+        <name>r_nat_u</name>
         <basis>atom</basis>
-        <nuclide> <id>922350000</id> <comp>0.53086206967755012</comp> </nuclide>
-        <nuclide> <id>922380000</id> <comp>0.46913793032244988</comp> </nuclide>
+        <nuclide> <id>922350000</id> <comp>0.0071</comp> </nuclide>
+        <nuclide> <id>922380000</id> <comp>0.993</comp> </nuclide>
     </recipe>
 
     <prototype>
