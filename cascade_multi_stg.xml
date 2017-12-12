@@ -20,7 +20,7 @@
         <name>nu_src</name>
         <config>
             <Source>
-                <outcommod>c_nat_u</outcommod>
+                <outcommod>c_nat_u_</outcommod>
                 <outrecipe>r_nat_u</outrecipe>
                 <throughput>1000.0</throughput>
                 <inventory_size>30000</inventory_size>

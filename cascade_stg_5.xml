@@ -69,8 +69,8 @@
     <recipe>
         <name>r_nat_u</name>
         <basis>atom</basis>
-        <nuclide> <id>922350000</id> <comp>0.59377673456187052</comp> </nuclide>
-        <nuclide> <id>922380000</id> <comp>0.40622326543812948</comp> </nuclide>
+        <nuclide> <id>922350000</id> <comp>0.84682541092339025</comp> </nuclide>
+        <nuclide> <id>922380000</id> <comp>0.15317458907660975</comp> </nuclide>
     </recipe>
 
     <prototype>
