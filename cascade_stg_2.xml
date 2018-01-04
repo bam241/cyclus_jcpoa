@@ -2,7 +2,7 @@
 
     <schematype>flat</schematype>
     <control>
-        <duration>100</duration>
+        <duration>3</duration>
         <startmonth>1</startmonth>
         <startyear>2000</startyear>
         <explicit_inventory>true</explicit_inventory>
@@ -56,7 +56,7 @@
                 <design_feed_flow>1000</design_feed_flow>
                 <max_centrifuges>164</max_centrifuges>
 
-
+                <fix_ab>1</fix_ab>
                 <centrifuge_velocity>350</centrifuge_velocity>
                 <height>1.8</height>
                 <diameter>0.105</diameter>
@@ -69,8 +69,8 @@
     <recipe>
         <name>r_nat_u</name>
         <basis>atom</basis>
-        <nuclide> <id>922350000</id> <comp>0.090602435283087451</comp> </nuclide>
-        <nuclide> <id>922380000</id> <comp>0.909397564716912549</comp> </nuclide>
+        <nuclide> <id>922350000</id> <comp>0.09068702099594537</comp> </nuclide>
+        <nuclide> <id>922380000</id> <comp>0.90931297900405463</comp> </nuclide>
     </recipe>
 
     <prototype>
