@@ -56,7 +56,7 @@
                 <design_feed_flow>1000</design_feed_flow>
                 <max_centrifuges>164</max_centrifuges>
 
-
+                <fix_ab>1</fix_ab>
                 <centrifuge_velocity>350</centrifuge_velocity>
                 <height>1.8</height>
                 <diameter>0.105</diameter>
@@ -69,8 +69,8 @@
     <recipe>
         <name>r_nat_u</name>
         <basis>atom</basis>
-        <nuclide> <id>922350000</id> <comp>0.58150601668100421</comp> </nuclide>
-        <nuclide> <id>922380000</id> <comp>0.41849398331899579</comp> </nuclide>
+        <nuclide> <id>922350000</id> <comp>0.5817557190946213</comp> </nuclide>
+        <nuclide> <id>922380000</id> <comp>0.4182442809053787</comp> </nuclide>
     </recipe>
 
     <prototype>
