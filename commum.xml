@@ -13,7 +13,6 @@
             <Source>
                 <outcommod>c_nat_u_</outcommod>
                 <outrecipe>r_nat_u</outrecipe>
-                <throughput>45</throughput>
             </Source>
         </config>
     </prototype>
