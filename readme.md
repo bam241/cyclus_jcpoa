@@ -1,12 +1,12 @@
 plan:
 - set the proper parameter for the centrifuges
-    - retrieve Walker configuration S/E = 4/11 -> F/P/T = 0.007/0.05/??
+    - Glaser/Walker like configuration S/E = 4/10 -> F/P/T = 0.007/0.035/??
         speed = 320
         h =1.8
         d = 0.105
         feed = 13
         L/F* = 2
-        >>>> S/E = 4/11 || F/P/T = 0.0071/0.051/0.0028
+        >>>> S/E = 4/10|| F/P/T = 0.0071/0.0412842/0.00290548
 - **case 1**:
     - run reference proliferation case: from 0.0071 -> 0.9
     - unlimited number of stages
@@ -17,6 +17,7 @@ plan:
     - use 30 ref cascades in serie to produce HEU:
         cascade: S/E = 4/11 || F/P/T = 0.0071/0.040/0.0032
         cut fixed: no phisical reconfiguration of the machines    
-    - *raw* : 6/5/4/3 stages 1 cascade each
+    - *raw* : 6/5/4/3 level 1 cascade each
+    - optimum 3 level: 25/5/1 cascade per level
         
 
