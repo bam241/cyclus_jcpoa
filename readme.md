@@ -18,6 +18,6 @@ plan:
         cascade: S/E = 4/11 || F/P/T = 0.0071/0.040/0.0032
         cut fixed: no phisical reconfiguration of the machines    
     - *raw* : 6/5/4/3 level 1 cascade each
-    - optimum 3 level: 25/5/1 cascade per level
-        
+    - with tail recycling: optimum 3 levels: 25/4/1 cascades per level
+    - without tail recycling: optimum 4 levels: 24/4/1/1 cascades per level
 

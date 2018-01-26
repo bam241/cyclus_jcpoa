@@ -1,0 +1,36 @@
+digraph G {
+	nu_src
+	cscd_0
+	str_0
+	str_nat
+	cscd_1
+	str_1
+	cscd_2
+	str_2
+	cscd_3
+	str_3
+	cscd_4
+	str_4
+	cscd_5
+	str_HEU
+	waste
+	str_nat -> cscd_0
+	str_0 -> cscd_1
+	str_1 -> cscd_2
+	str_2 -> cscd_3
+	str_3 -> cscd_4
+	str_4 -> cscd_5
+	cscd_0 -> str_0
+	cscd_1 -> str_1
+	cscd_2 -> str_2
+	cscd_3 -> str_3
+	cscd_4 -> str_4
+	cscd_5 -> str_HEU
+	nu_src -> str_nat
+	cscd_0 -> waste
+	cscd_1 -> waste
+	cscd_2 -> waste
+	cscd_3 -> waste
+	cscd_4 -> waste
+	cscd_5 -> waste
+}
