@@ -1,0 +1,21 @@
+digraph G {
+	nu_src
+	cascade_0
+	storage_0
+	storage_nat
+	cascade_1
+	storage_1
+	cascade_2
+	storage_HEU
+	waste
+	storage_nat -> cascade_0 [label=""]
+	storage_0 -> cascade_1 [label=""]
+	storage_1 -> cascade_2 [label=""]
+	cascade_0 -> storage_0 [label=""]
+	cascade_1 -> storage_1 [label=""]
+	cascade_2 -> storage_HEU [label=""]
+	nu_src -> storage_nat [label=""]
+	cascade_0 -> waste [label=""]
+	cascade_1 -> waste [label=""]
+	cascade_2 -> waste [label=""]
+}
