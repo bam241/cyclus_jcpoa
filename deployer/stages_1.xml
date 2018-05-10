@@ -7,15 +7,14 @@
                 <prototypes>
                     <val>nu_src</val>
 
-                    <val>cascade_0</val>
-                    <val>storage_0</val>
-                    <val>storage_nat</val>
-
-                    <val>cascade_1</val>
-                    <val>storage_1</val>
-
-                    <val>cascade_2</val>
-                    <val>storage_2</val>
+                    <val>cascade</val>
+                    
+                    <val>storage_u_1</val>
+                    <val>storage_u_10</val>
+                    <val>storage_u_20</val>
+                    <val>storage_u_40</val>
+                    <val>storage_u_60</val>
+                    <val>storage_HEU</val>
 
                     <val>waste</val>
                 </prototypes>
@@ -24,12 +23,11 @@
                     <val>1</val>
 
                     <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
 
                     <val>1</val>
                     <val>1</val>
-
+                    <val>1</val>
+                    <val>1</val>
                     <val>1</val>
                     <val>1</val>
 
@@ -39,13 +37,12 @@
                 <n_build>
                     <val>1</val>
 
-                    <val>1</val>
-                    <val>1</val>
-                    <val>1</val>
+                    <val>30</val>
 
                     <val>1</val>
                     <val>1</val>
-
+                    <val>1</val>
+                    <val>1</val>
                     <val>1</val>
                     <val>1</val>
 

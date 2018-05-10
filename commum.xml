@@ -11,7 +11,7 @@
         <name>nu_src</name>
         <config>
             <Source>
-                <outcommod>c_nat_u_</outcommod>
+                <outcommod>c_feed_u</outcommod>
                 <outrecipe>r_nat_u</outrecipe>
             </Source>
         </config>
@@ -30,98 +30,94 @@
     </prototype>
 
     <prototype>
-        <name>storage_nat</name>
+        <name>storage_u_1</name>
         <config>
             <Storage>
                 <in_commods>
-                    <val>c_nat_u_</val>
+                    <val>c_u_1</val>
                 </in_commods>
                 <out_commods>
-                    <val>c_nat_u</val>
+                    <val>c_feed_u</val>
                 </out_commods>
                 <residence_time>0</residence_time>
+                <discrete_handling>1</discrete_handling>
             </Storage>
         </config>
     </prototype>
+
     <prototype>
-        <name>storage_0</name>
+        <name>storage_u_10</name>
         <config>
             <Storage>
                 <in_commods>
-                    <val>c_enrich_u_0</val>
+                    <val>c_u_10</val>
                 </in_commods>
                 <out_commods>
-                    <val>c_enrich_u_0_str</val>
+                    <val>c_feed_u</val>
                 </out_commods>
                 <residence_time>0</residence_time>
+                <discrete_handling>1</discrete_handling>
             </Storage>
         </config>
     </prototype>
+
     <prototype>
-        <name>storage_1</name>
+        <name>storage_u_20</name>
         <config>
             <Storage>
                 <in_commods>
-                    <val>c_enrich_u_1</val>
+                    <val>c_u_20</val>
                 </in_commods>
-                    <out_commods>
-                    <val>c_enrich_u_1_str</val>
+                <out_commods>
+                    <val>c_feed_u</val>
                 </out_commods>
                 <residence_time>0</residence_time>
+                <discrete_handling>1</discrete_handling>
             </Storage>
         </config>
     </prototype>
+
     <prototype>
-        <name>storage_2</name>
+        <name>storage_u_40</name>
         <config>
             <Storage>
                 <in_commods>
-                    <val>c_enrich_u_2</val>
+                    <val>c_u_40</val>
                 </in_commods>
                 <out_commods>
-                    <val>c_enrich_u_2_str</val>
+                    <val>c_feed_u</val>
                 </out_commods>
                 <residence_time>0</residence_time>
+                <discrete_handling>1</discrete_handling>
             </Storage>
         </config>
     </prototype>
+
     <prototype>
-        <name>storage_3</name>
+        <name>storage_u_60</name>
         <config>
             <Storage>
                 <in_commods>
-                    <val>c_enrich_u_3</val>
+                    <val>c_u_60</val>
                 </in_commods>
                 <out_commods>
-                    <val>c_enrich_u_3_str</val>
+                    <val>c_feed_u</val>
                 </out_commods>
                 <residence_time>0</residence_time>
+                <discrete_handling>1</discrete_handling>
             </Storage>
         </config>
     </prototype>
+
     <prototype>
-        <name>storage_4</name>
+        <name>storage_HEU</name>
         <config>
             <Storage>
                 <in_commods>
-                    <val>c_enrich_u_4</val>
+                    <val>c_heu</val>
                 </in_commods>
                 <out_commods>
-                    <val>c_enrich_u_4_str</val>
-                </out_commods>
-                <residence_time>0</residence_time>
-            </Storage>
-        </config>
-    </prototype>
-    <prototype>
-        <name>storage_5</name>
-        <config>
-            <Storage>
-                <in_commods>
-                    <val>c_enrich_u_5</val>
-                </in_commods>
-                <out_commods>
-                    <val>c_enrich_u_5_str</val>
+                    <val>c_enrich_heu_str</val>
                 </out_commods>
                 <residence_time>0</residence_time>
             </Storage>
