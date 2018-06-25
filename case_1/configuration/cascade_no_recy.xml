@@ -8,8 +8,42 @@
                 <feed_commod>c_feed_u</feed_commod>
                 <feed_recipe>r_nat_u</feed_recipe>
                 <product_commod>c_enrich_u</product_commod>
-                <tails_commod>c_depleted_u</tails_commod>
-                <max_feed_inventory>90</max_feed_inventory>
+                <tails_commod>c_tails_u</tails_commod>
+
+                <max_feed_inventory>44.09</max_feed_inventory>
+                <exclusive_mat_trad>0</exclusive_mat_trad>
+                <commodities>
+                    <item>
+                        <assay>0.003</assay>
+                        <commodity>c_depleted_u</commodity>
+                    </item>
+                    <item>
+                        <assay>0.01</assay>
+                        <commodity>c_u_1</commodity>
+                    </item>
+                    <item>
+                        <assay>0.10</assay>
+                        <commodity>c_u_10</commodity>
+                    </item>
+                    <item>
+                        <assay>0.20</assay>
+                        <commodity>c_u_20</commodity>
+                    </item>
+                    <item>
+                        <assay>0.40</assay>
+                        <commodity>c_u_40</commodity>
+                    </item>
+                    <item>
+                        <assay>0.60</assay>
+                        <commodity>c_u_60</commodity>
+                    </item>
+                    <item>
+                        <assay>0.90</assay>
+                        <commodity>c_heu</commodity>
+                    </item>
+                </commodities>
+
+                <tail_recycling>0</tail_recycling>
 
                 <design_product_assay>0.035</design_product_assay>
                 <design_tails_assay>0.003</design_tails_assay>
